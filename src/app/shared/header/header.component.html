@@ -1,0 +1,113 @@
+<header>
+    <div class="navb-logo">
+        <a>
+            <img src="https://cdn-icons-png.flaticon.com/512/3237/3237439.png" alt="Market" style="width: 60px; height: 60px;" />
+        </a>
+    </div>
+    <div class="container-fluid">
+
+        <div class="navb-items">
+            <div class="item">
+                <a  [routerLink]="'/market/dashboard/usuarios'" >Usuarios</a>
+            </div>
+            <div class="item">
+                <a [routerLink]="'/market/dashboard/productos'">Productos</a>
+            </div>
+            <div class="item">
+                <a [routerLink]="'/market/dashboard/informacion'" style="color: #fafafa;">Informacion</a>
+            </div>
+            <div class="item-button">
+                <img src="https://carloscueto.edu.pe/login/img/user.png"
+                    class="rounded-circle mb-1" style="width: 100px; height: 60px; margin-right: 10px" alt="Avatar"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false"
+                    aria-controls="collapseWidthExample" />
+            </div>
+            <div style="min-height: 40px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body bg-transparent logOut" style="width: auto;">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> Salir
+                    </div>
+                </div>
+            </div>
+
+
+            <div style="margin-right: 10px">
+                <h6 class="mb-1"><strong style="color: #fafafa;">Bienvenido</strong></h6>
+                <p class="text-muted">
+                    <span class="fs-6" style="color: #fafafa;"> {{nombreusuario}} </span>
+                    <span class="badge user-rol">Usuario Administrador</span>
+                </p>
+            </div>
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="mobile-toggler d-lg-none">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <div style="margin-right: 10px">
+                            <h6 class="mb-1"><strong style="color: #fafafa;">Bienvenido</strong></h6>
+                            <p class="text-muted">
+                                <span class="fs-6" style="color: #fafafa;"> Nombre y Apellido </span><br>
+                                <span class="badge user-rol">Usuario Administrador</span>
+                            </p>
+                        </div>
+                        <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close">
+                        </button>
+
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <span style="color: aliceblue; font-size: small;">
+                            <strong>usuarioconnombresyapellidos@pwc.com </strong>
+                        </span>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="item-button" style="display: flex; justify-content: center;">
+                            <img src="https://carloscueto.edu.pe/login/img/user.png"
+                                class="rounded-circle mb-1" style="width: 80px; height: 50px;" alt="Avatar"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+                                aria-expanded="false" aria-controls="collapseWidthExample" />
+                        </div>
+                        <div style="min-height: 20px; display: flex; justify-content: center;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                <div class="card card-body bg-transparent logOut">
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i> Salir
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-line">
+                            <i class="fa-solid fa-house"></i> <a href="/">Usuarios</a>
+                        </div>
+                        <div class="modal-line">
+                            <i class="fa-solid fa-bell-concierge"></i><a href="/servicios">Productos</a>
+                        </div>
+                        <div class="modal-line">
+                            <i class="fa-solid fa-file-lines"></i><a href="/informacion">Informacion</a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="mobile-modal-footer">
+                        <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- cierre del modal -->
+    </div>
+
+
+</header>

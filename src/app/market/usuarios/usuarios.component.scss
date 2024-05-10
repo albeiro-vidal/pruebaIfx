@@ -1,0 +1,24 @@
+.user-card {
+    background-color: aliceblue;
+    max-width: 1600px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    margin-top: 3%;
+  }
+  
+  @media (max-width: 600px) {
+    .user-card {
+      padding: 10px; /* Reducir el relleno en dispositivos móviles */
+    }
+  }
+
+  .card-title {
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Margen inferior para separar el título del contenido */
+    background-color: aliceblue;
+  }
+
+  
+

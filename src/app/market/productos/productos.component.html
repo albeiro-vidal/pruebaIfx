@@ -1,0 +1,19 @@
+<div class="productos-container">
+    <h2 class="titulo">Descubre Nuestros Productos</h2>
+    <div class="row">
+        <div class="col-md-3 col-sm-6" *ngFor="let producto of productos">
+            <div class="product-grid">
+                <div class="product-image">
+                    <a class="image" title="{{producto.description}}" (click)="openModal(producto)">
+                        <img [src]="producto.image">
+                    </a>                   
+                    <a href="" class="add-to-cart">Add to Cart</a>
+                </div>
+                <div class="product-content">
+                    <h3 class="title"><a>{{ producto.title }}</a></h3>
+                    <div class="price">${{ producto.price }} <span></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

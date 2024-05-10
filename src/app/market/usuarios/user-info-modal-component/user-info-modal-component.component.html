@@ -1,0 +1,60 @@
+   <div class="contenedor">
+    <h1 class="logo"><span class="nombre-empresa">INFO</span> Usuario</h1>
+    <div class="animated bounceInLeft">     
+      <div class="contacto">     
+        <form class="formulario" [formGroup]="userForm">
+          <p>
+            <label>Nombre</label>
+            <input type="text" name="nombre" required formControlName="firstname">
+          </p>
+          <p>
+            <label>Apellido</label>
+            <input type="text" name="apellido" formControlName="lastname">
+          </p>
+          <p>
+            <label>Correo</label>
+            <input type="email" name="email" required formControlName="email">
+          </p>          
+          <p>
+            <label>Nombre Usuario</label>
+            <input type="email" name="username" required formControlName="username">
+          </p>
+          <p>
+            <label>Teléfono</label>
+            <input type="text" name="teléfono" required formControlName="phone">
+          </p>
+          <p>
+            <label>Direccion</label>
+            <input type="text" name="street" required formControlName="street">
+          </p>
+          <p>
+            <label>Ciudad</label>
+            <input type="text" name="city" required formControlName="city">
+          </p>
+          <p>
+            <label>Codigo</label>
+            <input type="text" name="zipcode" required formControlName="zipcode">
+          </p>
+          <p>
+            <label>Numero</label>
+            <input type="text" name="number" required formControlName="number">
+          </p>
+          <p>
+            <label>lat</label>
+            <input type="text" name="lat" required formControlName="lat">
+          </p>
+          <p>
+            <label>long</label>
+            <input type="text" name="long" required formControlName="long">
+          </p>
+          <p>
+            <label>Password</label>
+            <input type="password" name="password" required formControlName="password">
+          </p>          
+          <p class="full">
+            <button class="btn btn-primary" (click)="updateUser()">Actualizar Usuario</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
